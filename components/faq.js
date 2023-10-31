@@ -35,22 +35,17 @@ const Faq = () => {
 
 const faqdata = [
   {
-    question: "Is this template completely free to use?",
-    answer: "Yes, this template is completely free to use.",
+    question: "Can We Report the Finded items?",
+    answer: "Yes, You can Report Finded Items also.",
   },
   {
-    question: "Can I use it in a commercial project?",
-    answer: "Yes, this you can.",
+    question: "Where we can find the code?",
+    answer: "You can find the code on the github.",
   },
   {
-    question: "What is your refund policy? ",
+    question: "How can we report the lost items?",
     answer:
-      "If you're unhappy with your purchase for any reason, email us within 90 days and we'll refund you in full, no questions asked.",
-  },
-  {
-    question: "Do you offer technical support? ",
-    answer:
-      "No, we don't offer technical support for free downloads. Please purchase a support plan to get 6 months of support.",
+      "You can report the lost items by clicking on the report lost items button.",
   },
 ];
 

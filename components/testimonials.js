@@ -2,9 +2,9 @@ import Image from "next/image";
 import React from "react";
 import Container from "./container";
 
-import userOneImg from "../public/img/user1.jpg";
-import userTwoImg from "../public/img/user2.jpg";
-import userThreeImg from "../public/img/user3.jpg";
+import userOneImg from "../public/img/Shubham.jpg";
+import userTwoImg from "../public/img/git.jpg";
+import userThreeImg from "../public/img/Shivam03.jpg";
 
 const Testimonials  = () => {
   return (
@@ -13,42 +13,40 @@ const Testimonials  = () => {
         <div className="lg:col-span-2 xl:col-auto">
           <div className="flex flex-col justify-between w-full h-full bg-gray-100 px-14 rounded-2xl py-14 dark:bg-trueGray-800">
             <p className="text-2xl leading-normal ">
-              Share a real <Mark>testimonial</Mark>
-              that hits some of your benefits from one of your popular customer.
+               {/* <Mark>Developers</Mark> */}
+            Hey, My name is Shubham Gatthewar. I am a full stack Developer
             </p>
 
             <Avatar
               image={userOneImg}
-              name="Sarah Steiner"
-              title="VP Sales at Google"
+              name="Shubham Gatthewar"
+              title="Full stack Developer"
             />
           </div>
         </div>
         <div className="">
           <div className="flex flex-col justify-between w-full h-full bg-gray-100 px-14 rounded-2xl py-14 dark:bg-trueGray-800">
             <p className="text-2xl leading-normal ">
-              Make sure you only pick the <Mark>right sentence</Mark>
-              to keep it short and simple.
+             Hey, My name is Dipak Jadhav.I am DevOps Enthujisatic and a Web Developer.I am Microsoft Learn Student Ambassador.
             </p>
 
             <Avatar
               image={userTwoImg}
-              name="Dylan Ambrose"
-              title="Lead marketer at Netflix"
+              name="Dipak Jadhav"
+              title="Web Developer"
             />
           </div>
         </div>
         <div className="">
           <div className="flex flex-col justify-between w-full h-full bg-gray-100 px-14 rounded-2xl py-14 dark:bg-trueGray-800">
             <p className="text-2xl leading-normal ">
-              This is an <Mark>awesome</Mark> landing page template I&apos;ve seen. I
-              would use this for anything.
+              Hey,My name is Shivam Gajjalwar.I am a Web Developer Explorer.
             </p>
 
             <Avatar
               image={userThreeImg}
-              name="Gabrielle Winn"
-              title="Co-founder of Acme Inc"
+              name="Shivam Gajjalwar"
+              title="Web Developer"
             />
           </div>
         </div>
