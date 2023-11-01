@@ -2,15 +2,21 @@ import Link from "next/link";
 import ThemeChanger from "./DarkSwitch";
 import Image from "next/image"
 import { Disclosure } from "@headlessui/react";
+import pages from "../pages";
+import LoginPage from "../pages/Login";
+import Report from "../pages/Report";
+import SignUp from "../pages/SignUp";
+import Home from "../pages";
+
 
 const Navbar = () => {
   const navigation = [
     "Home",
     "About Us",
     "Report",
-    "Found",
     "Contact Us",
-    "Login"
+   "Login",
+   "SignUP"
   ];
 
   return (
@@ -62,8 +68,8 @@ const Navbar = () => {
         </Disclosure>
 
         {/* menu  */}
-        <div className="hidden text-center lg:flex lg:items-center">
-          <ul className="items-center justify-end flex-1 pt-6 list-none lg:pt-0 lg:flex">
+        {/* <div className="hidden text-center lg:flex lg:items-center"> */}
+          {/* <ul className="items-center justify-end flex-1 pt-6 list-none lg:pt-0 lg:flex">
             {navigation.map((menu, index) => (
               <li className="mr-3 nav__item" key={index}>
                 <Link href="/" className="inline-block px-4 py-2 text-lg font-normal text-gray-800 no-underline rounded-md dark:text-gray-200 hover:text-indigo-500 focus:text-indigo-500 focus:bg-indigo-100 focus:outline-none dark:focus:bg-gray-800">
@@ -71,6 +77,37 @@ const Navbar = () => {
                 </Link>
               </li>
             ))}
+          </ul> */}
+         
+        {/* </div> */}
+        <div className="hidden text-center lg:flex lg:items-center">
+          <ul className="items-center justify-end flex-1 pt-6 list-none lg:pt-0 lg:flex">
+            <li className="mr-3 nav__item inline-block px-4 py-2 text-lg font-normal text-gray-800 no-underline rounded-md dark:text-gray-200 hover:text-indigo-500 focus:text-indigo-500 focus:bg-indigo-100 focus:outline-none dark:focus:bg-gray-800">
+              <Link href="/Home">Home</Link>
+            </li>
+            <li className="mr-3 nav__item inline-block px-4 py-2 text-lg font-normal text-gray-800 no-underline rounded-md dark:text-gray-200 hover:text-indigo-500 focus:text-indigo-500 focus:bg-indigo-100 focus:outline-none dark:focus:bg-gray-800">
+              <Link href="/Testimonials" target="_blank">About Us</Link>
+            </li>
+            <li className="mr-3 nav__item inline-block px-4 py-2 text-lg font-normal text-gray-800 no-underline rounded-md dark:text-gray-200 hover:text-indigo-500 focus:text-indigo-500 focus:bg-indigo-100 focus:outline-none dark:focus:bg-gray-800">
+              <Link href="/Report">Report</Link>
+            </li>
+            {/* <li className="mr-3 nav__item inline-block px-4 py-2 text-lg font-normal text-gray-800 no-underline rounded-md dark:text-gray-200 hover:text-indigo-500 focus:text-indigo-500 focus:bg-indigo-100 focus:outline-none dark:focus:bg-gray-800">
+              <Link href="/found">Found</Link>
+            </li> */}
+            <li className="mr-3 nav__item inline-block px-4 py-2 text-lg font-normal text-gray-800 no-underline rounded-md dark:text-gray-200 hover:text-indigo-500 focus:text-indigo-500 focus:bg-indigo-100 focus:outline-none dark:focus:bg-gray-800">
+              <Link href="/SignUp" target="_blank" rel="noopener noreferrer">Contact Us</Link>
+            </li>
+            <li className="mr-3 nav__item inline-block px-4 py-2 text-lg font-normal text-gray-800 no-underline rounded-md dark:text-gray-200 hover:text-indigo-500 focus:text-indigo-500 focus:bg-indigo-100 focus:outline-none dark:focus:bg-gray-800">
+  <a href="/Login" target="_blank" rel="noopener noreferrer">
+    Login
+  </a>
+</li>
+            <li className="mr-3 nav__item inline-block px-4 py-2 text-lg font-normal text-gray-800 no-underline rounded-md dark:text-gray-200 hover:text-indigo-500 focus:text-indigo-500 focus:bg-indigo-100 focus:outline-none dark:focus:bg-gray-800">
+  <a href="/SignUp" target="_blank" rel="noopener noreferrer">
+    SignUP
+  </a>
+</li>
+
           </ul>
         </div>
 
