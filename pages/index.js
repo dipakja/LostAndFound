@@ -5,8 +5,11 @@ import SectionTitle from "../components/sectionTitle";
 import { benefitOne, benefitTwo } from "../components/data";
 import Benefits from "../components/benefits";
 import Footer from "../components/footer";
-import Testimonials from "../components/Testimonials";
+import Testimonials from "./Testimonials";
 import Cta from "../components/cta";
+import LoginPage from "./Login";
+import Report from "./Report";
+
 import Faq from "../components/faq";
 
 
@@ -37,6 +40,7 @@ const Home = () => {
 
       </SectionTitle>
       <Faq />
+
       <Footer />
 
     </>
