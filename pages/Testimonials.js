@@ -2,9 +2,9 @@ import Image from "next/image";
 import React from "react";
 import Container from "../components/container";
 
-import userOneImg from "../public/img/Shubham.jpg";
-import userTwoImg from "../public/img/git.jpg";
-import userThreeImg from "../public/img/Shivam03.jpg";
+import ShubhamImg from "../public/img/Shubham.jpg";
+import gitImg from "../public/img/git.jpg";
+import Shivam03 from "../public/img/Shivam03.jpg";
 import Navbar from '../components/navbar';
 import Footer from '../components/footer';
 
@@ -23,11 +23,11 @@ const Testimonials  = () => {
      <div className="flex flex-col justify-between w-full h-full bg-gray-100 px-14 rounded-2xl py-14 dark:bg-trueGray-800">
        <p className="text-2xl leading-normal ">
           {/* <Mark>Developers</Mark> */}
-       Hey, My name is Shubham Gatthewar. I am a third year IT engineering Student.I am a full stack Developer
+       Hey, My name is Shubham Gatthewar. I am a third year IT engineering Student.I am a web Developer
        </p>
 
        <Avatar
-         image={userOneImg}
+         image={ShubhamImg}
          name="Shubham Gatthewar"
          title="Full stack Developer"
        />
@@ -40,7 +40,7 @@ const Testimonials  = () => {
        </p>
 
        <Avatar
-         image={userTwoImg}
+         image={gitImg}
          name="Dipak Jadhav"
          title="Web Developer"
        />
@@ -53,7 +53,7 @@ const Testimonials  = () => {
        </p>
 
        <Avatar
-         image={userThreeImg}
+         image={Shivam03}
          name="Shivam Gajjalwar"
          title="Web Developer"
        />
