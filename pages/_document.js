@@ -7,7 +7,7 @@ class MyDocument extends Document {
       <Html>
         <Head>
           <Link
-            href="https://fonts.googleapis.com/css2?family=Inter:wght@400..700&display=swap"
+            href="https://img.favpng.com/21/5/24/django-web-development-web-framework-python-software-framework-png-favpng-XaZVgk1LHXtvj7U1fPCMqj3iH.jpg"
             rel="stylesheet"
           />
         </Head>
